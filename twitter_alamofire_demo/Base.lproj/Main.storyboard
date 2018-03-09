@@ -78,7 +78,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@userhandle" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="epC-Fs-Q5Z">
-                                                    <rect key="frame" x="166" y="8" width="80" height="16"/>
+                                                    <rect key="frame" x="166" y="8" width="78.5" height="16"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -90,14 +90,14 @@
                                                         <constraint firstAttribute="height" constant="50" id="dCm-g8-a1r"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Phc-GT-b9x" customClass="ActiveLabel" customModule="twitter_alamofire_demo" customModuleProvider="target">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Name name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Phc-GT-b9x" customClass="ActiveLabel" customModule="twitter_alamofire_demo" customModuleProvider="target">
                                                     <rect key="frame" x="74" y="8" width="76" height="16"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8/9/16" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bDa-fl-ZEF">
-                                                    <rect key="frame" x="262" y="8" width="39.5" height="16"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="8/9/16" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bDa-fl-ZEF">
+                                                    <rect key="frame" x="260.5" y="8" width="39.5" height="16"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -115,15 +115,15 @@
                                                     </constraints>
                                                     <state key="normal" title="Reply" image="reply-icon"/>
                                                 </button>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="220" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fb9-X8-Rgt">
-                                                    <rect key="frame" x="108" y="89.5" width="19" height="12"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fb9-X8-Rgt">
+                                                    <rect key="frame" x="108" y="95.5" width="0.0" height="0.0"/>
                                                     <accessibility key="accessibilityConfiguration" identifier="numReplysLabel"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YbI-NI-xQc">
-                                                    <rect key="frame" x="151" y="80" width="30" height="30"/>
+                                                    <rect key="frame" x="132" y="80" width="30" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="30" id="nr7-Vz-YDt"/>
                                                     </constraints>
@@ -133,13 +133,13 @@
                                                     </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="numRetweetsLabel" text="116" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dRO-pD-LMz">
-                                                    <rect key="frame" x="185" y="89.5" width="17" height="12"/>
+                                                    <rect key="frame" x="166" y="89.5" width="17" height="12"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TgT-w2-5D0">
-                                                    <rect key="frame" x="226" y="80.5" width="30" height="30"/>
+                                                    <rect key="frame" x="207" y="80.5" width="30" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="30" id="oCX-Se-OEi"/>
                                                     </constraints>
@@ -149,14 +149,14 @@
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O9b-xb-Om9">
-                                                    <rect key="frame" x="309" y="80.5" width="30" height="30"/>
+                                                    <rect key="frame" x="290" y="80.5" width="30" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="30" id="OTG-fi-LSc"/>
                                                     </constraints>
                                                     <state key="normal" title="Message" image="message-icon"/>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="49P-xp-4gp">
-                                                    <rect key="frame" x="260" y="89.5" width="25" height="12"/>
+                                                    <rect key="frame" x="241" y="89.5" width="25" height="12"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -183,7 +183,7 @@
                                                 <constraint firstAttribute="bottom" secondItem="wdd-k7-2fd" secondAttribute="bottom" constant="16" id="dHS-oj-QZI"/>
                                                 <constraint firstItem="wdd-k7-2fd" firstAttribute="leading" secondItem="GKH-b9-qSt" secondAttribute="leading" id="dPb-1Q-N5n"/>
                                                 <constraint firstItem="Tn8-ec-CxO" firstAttribute="leading" secondItem="zd2-Er-659" secondAttribute="leading" constant="16" id="guF-0H-kfU"/>
-                                                <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="bDa-fl-ZEF" secondAttribute="trailing" constant="75" id="hdt-ww-jIJ"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="bDa-fl-ZEF" secondAttribute="trailing" constant="75" id="hdt-ww-jIJ"/>
                                                 <constraint firstItem="GKH-b9-qSt" firstAttribute="leading" secondItem="Tn8-ec-CxO" secondAttribute="trailing" constant="8" id="jBT-Zw-2z2"/>
                                                 <constraint firstItem="fb9-X8-Rgt" firstAttribute="centerY" secondItem="wdd-k7-2fd" secondAttribute="centerY" id="pz6-Aq-0gB"/>
                                                 <constraint firstItem="bDa-fl-ZEF" firstAttribute="leading" secondItem="epC-Fs-Q5Z" secondAttribute="trailing" constant="16" id="rbJ-lp-krF"/>
