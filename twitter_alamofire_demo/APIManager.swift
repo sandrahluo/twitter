@@ -58,7 +58,7 @@ class APIManager: SessionManager {
         // Clear current user by setting it to nil
         User.current = nil
         
-        // Deauthorize OAuth tokens
+        // Deauthorize OAuth tokens; do this to prompt for username and password again upon logging out
 
         // Logout notification
         NotificationCenter.default.post(name: NSNotification.Name("didLogout"), object: nil)
@@ -83,18 +83,17 @@ class APIManager: SessionManager {
     }
         
     func getHomeTimeLine(completion: @escaping ([Tweet]?, Error?) -> ()) {
-
-        // This uses tweets from disk to avoid hitting rate limit. Comment out if you want fresh
-        // tweets,
-        if let data = UserDefaults.standard.object(forKey: "hometimeline_tweets") as? Data {
-            let tweetDictionaries = NSKeyedUnarchiver.unarchiveObject(with: data) as! [[String: Any]]
-            let tweets = tweetDictionaries.flatMap({ (dictionary) -> Tweet in
-                Tweet(dictionary: dictionary)
-            })
-
-            completion(tweets, nil)
-            return
-        }
+        
+        // This uses tweets from disk to avoid hitting rate limit. Comment out if you want fresh tweets
+//        if let data = UserDefaults.standard.object(forKey: "hometimeline_tweets") as? Data {
+//            let tweetDictionaries = NSKeyedUnarchiver.unarchiveObject(with: data) as! [[String: Any]]
+//            let tweets = tweetDictionaries.flatMap({ (dictionary) -> Tweet in
+//                Tweet(dictionary: dictionary)
+//            })
+//
+//            completion(tweets, nil)
+//            return
+//        }
 
         request(URL(string: "https://api.twitter.com/1.1/statuses/home_timeline.json")!, method: .get)
             .validate()
@@ -160,7 +159,7 @@ class APIManager: SessionManager {
     
     // MARK: TODO: Retweet
     func retweet(_ tweet: Tweet, completion: @escaping(Tweet?, Error?) -> ()) {
-        let URLString = "https://api.twitter.com/1.1/statuses/retweet/:id.json"
+        let URLString = "https://api.twitter.com/1.1/statuses/retweet.json"
         let parameters = ["id": tweet.id]
         request(URLString, method: .post, parameters: parameters, encoding: URLEncoding.queryString).responseJSON{ (response) in
             
@@ -177,7 +176,7 @@ class APIManager: SessionManager {
     
     // MARK: TODO: Un-Retweet
     func unretweet(_ tweet: Tweet, completion: @escaping(Tweet?, Error?) -> ()) {
-        let URLString = "https://api.twitter.com/1.1/statuses/retweet/:id.json"
+        let URLString = "https://api.twitter.com/1.1/statuses/unretweet.json"
         let parameters = ["id": tweet.id]
         request(URLString, method: .post, parameters: parameters, encoding: URLEncoding.queryString).responseJSON{ (response) in
             
